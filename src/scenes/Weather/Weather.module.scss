@@ -1,0 +1,66 @@
+@import '../../assets/styles/component-base.scss';
+
+.wrapper {
+  box-sizing: border-box;
+  height: calc(100vh - 84px);
+}
+
+.inner {
+  @include container;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  grid-gap: 16px;
+  height: 100%;
+  box-sizing: border-box;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.header {
+  // grid-column: 1/span 2;
+  width: 100%;
+}
+
+.map {
+  grid-row: 1/span 2;
+  grid-column: 2;
+}
+
+.weather {
+  grid-row: 1;
+  border: 1px solid $border;
+}
+
+.history {
+  border: 1px solid $border;
+}
+
+@media (max-width: $tablets) {
+  .wrapper {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .inner {
+    grid-template-columns: 1fr;
+    grid-template-rows: 50vh auto auto;
+    grid-gap: 20px;
+
+    .map {
+      grid-row: 1;
+      grid-column: 1;
+    }
+
+    .weather {
+      grid-row: 2;
+      grid-column: 1;
+    }
+
+    .history {
+      grid-row: 3;
+      grid-column: 1;
+    }
+  }
+
+}

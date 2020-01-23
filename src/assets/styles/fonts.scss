@@ -1,0 +1,34 @@
+/*Helvetica Regular*/
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/HelveticaRegular.ttf") format("ttf"), url("../fonts/HelveticaRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*Open Sans Light*/
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/HelveticaLight.ttf") format("ttf"), url("../fonts/HelveticaLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/*Helvetica Bold*/
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/HelveticaBold.ttf") format("ttf"), url("../fonts/HelveticaBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*Lucida Grande Regular*/
+@font-face {
+  font-family: "Lucida Grande";
+  src: url("../fonts/Lucida_Grande.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');

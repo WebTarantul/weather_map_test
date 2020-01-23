@@ -1,0 +1,25 @@
+@import '../../assets/styles/component-base.scss';
+
+.wrapper {
+
+  &:nth-child(odd) {
+    background: lighten($color: $border, $amount: 10);
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: $black;
+  }
+
+  .coords {
+    text-align: right;
+
+    span {
+      display: block;
+    }
+  }
+}

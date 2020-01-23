@@ -1,0 +1,44 @@
+@import '../../assets/styles/component-base.scss';
+
+.wrapper {
+  background: rgb(251, 216, 188);
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+
+  .right {
+    text-align: right;
+    display: flex;
+    align-items: center;
+
+    form {
+      margin-left: 5px;
+    }
+
+    input {
+      border: 1px solid $orange;
+      width: 25px;
+      height: 20px;
+      text-align: center;
+      padding: 5px;
+      border-radius: 3px;
+
+    }
+
+    span {
+      font-size: 12px;
+    }
+  }
+
+  .tittle {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}

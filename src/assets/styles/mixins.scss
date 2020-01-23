@@ -1,0 +1,36 @@
+@mixin gaps {
+  padding: 0 16px;
+
+  @media (max-width: $tablets) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@mixin container {
+  max-width: 1600px;
+  margin: 0 auto;
+  @include gaps;
+}
+
+@mixin list-container {
+  max-width: 887px;
+  width: 100%;
+  box-sizing: border-box;
+  @include gaps;
+
+  @media (max-width: $tablets) {
+    max-width: 875px;
+  }
+}
+
+@mixin visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}

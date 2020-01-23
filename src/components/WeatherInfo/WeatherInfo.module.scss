@@ -1,0 +1,104 @@
+@import '../../assets/styles/component-base.scss';
+
+.wrapper {
+  display: flex;
+  @include gaps;
+  justify-content: space-between;
+  padding: 10px;
+  background: $background;
+}
+
+.header {
+  font-size: 18px;
+}
+
+.temperature {
+  text-align: center;
+
+  p {
+    margin: 0;
+  }
+}
+
+.temperatureNum {
+  font-size: 32px;
+
+  b {
+    color: $accent;
+  }
+}
+
+.mainDescription {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.coords {
+  margin: 0 7px;
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid $border;
+  }
+
+  thead {
+    background: rgba($orange, 0.3);
+    text-align: center;
+
+    th {
+      text-align: center;
+    }
+  }
+
+  tr {
+    border-bottom: 1px solid #ccc;
+  }
+
+  th,
+  td {
+    text-align: left;
+    padding: 4px;
+    border-left: 1px solid #ccc;
+    padding: 6px;
+  }
+}
+
+.descrTable {
+  border: 1px solid rgba($orange, 0.3);
+  border-collapse: collapse;
+  font-size: 14px;
+
+  tr:nth-child(odd) {
+    background: lighten($color: $border, $amount: 20);
+  }
+
+  th,
+  td {
+    padding: 3px 7px;
+
+  }
+}
+
+@media (max-width: $phones) {
+  .wrapper {
+    flex-wrap: wrap;
+
+  }
+
+  .mainInfo {
+    width: 100%;
+  }
+
+  .coords,
+  .descrTable {
+    margin: 0;
+    margin-top: 16px;
+    flex-grow: 1;
+  }
+
+  table {
+    width: 100%;
+  }
+}
